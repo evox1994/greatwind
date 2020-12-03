@@ -203,12 +203,24 @@ $(document).ready(function(){
 			col--;
 			$(this).parent('.quantity').find('.number').text(col);
 		} else {
-			$(this).parents('.buy-wrap').removeClass('active');
+			if ( $(this).parents('.buy-wrap').length ){
+				$(this).parents('.buy-wrap').removeClass('active');
+			} else {
+				$(this).parents('.b-order .list > li').remove();
+			}
 		}
 	});
 
 	$(document).on('click','.cat-btn',function(){
 		$(this).parent('.header-cat').toggleClass('active');
+	});
+
+	$('input.cart-swap').on('change',function(){
+		var item = $('input.cart-swap:checked').attr('data-cart');
+		$('.cart-item').removeClass('active');
+		$('.cart-item').find('input').prop('disabled',true);
+		$('.cart-item[data-cart="'+item+'"]').addClass('active');
+		$('.cart-item[data-cart="'+item+'"]').find('input').prop('disabled',false);
 	});
 
 });
