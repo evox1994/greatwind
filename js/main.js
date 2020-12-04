@@ -174,14 +174,44 @@ $(document).ready(function(){
 		} else {
 			$('.mass-sel').removeClass('active');
 		}
+
+		if ( $event.closest('.b-command .swaps').length ){
+			if ( $event.closest('.b-command .swaps .text').length ){
+				if ( $event.parent('.swaps').hasClass('active') ){
+					$event.parent('.swaps').removeClass('active');
+				} else {
+					$('.b-command .swaps').removeClass('active');
+					$event.parent('.swaps').addClass('active');
+				}
+			}
+		} else {
+			$('.b-command .swaps').removeClass('active');
+		}
 	});
 
 	$(document).on('click','.mass-sel-list li',function(){
 		var text = $(this).text();
-		$(this).parent('.mass-sel-list').find('li').removeClass('active');
-		$(this).addClass('active');
+
+		if ( !$(this).hasClass('active') ){
+			$(this).parent('.mass-sel-list').find('li').removeClass('active');
+			$(this).addClass('active');
+			$(this).parents('.mass-sel').find('.mass-sel-btn').text(text);
+		}
 		$(this).parents('.mass-sel').removeClass('active');
-		$(this).parents('.mass-sel').find('.mass-sel-btn').text(text);
+	});
+
+	$(document).on('click','.b-command .swaps .btns > li',function(){
+		var text = $(this).text();
+		var item = $(this).attr('data-command');
+
+		if ( !$(this).hasClass('active') ){
+			$(this).parent('.btns').find('li').removeClass('active');
+			$(this).addClass('active');
+			$(this).parents('.b-command').find('.command-wrap').removeClass('active');
+			$(this).parents('.b-command').find('.command-wrap[data-command="'+item+'"]').addClass('active');
+			$(this).parents('.swaps').find('.text').text(text);
+		}
+		$(this).parents('.swaps').removeClass('active');
 	});
 
 	$(document).on('click','.buy-btn',function(){
