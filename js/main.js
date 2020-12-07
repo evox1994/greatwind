@@ -253,4 +253,28 @@ $(document).ready(function(){
 		$('.cart-item[data-cart="'+item+'"]').find('input').prop('disabled',false);
 	});
 
+	$(document).on('click','.b-filter .item .btn',function(){
+		$(this).parents('.b-filter').find('.item').removeClass('active');
+		$(this).parent('.item').addClass('active');
+	});
+
+	$(document).on('click','.b-filter .subfilter .title span',function(){
+		$(this).parents('.subfilter').toggleClass('active');
+	});
+
+	$(document).on('click','.filter-open',function(){
+		$('body').addClass('no-scroll');
+		$(this).parents('.b-filter').addClass('active');
+	});
+
+	$(document).on('click','.close-filter, .filter-btn',function(){
+		$(this).parents('.b-filter').removeClass('active');
+		$('body').removeClass('no-scroll');
+	});
+
+	$(document).on('click','.clear-btn',function(){
+		$(this).parents('.b-filter').find('.item').removeClass('active');
+		$(this).parents('.b-filter').find('.item:first-child').addClass('active');
+	});
+
 });

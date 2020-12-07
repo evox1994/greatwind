@@ -101,26 +101,18 @@
 		</div>
 
 		<div class="b-face">
-			<div class="container">
-				<div class="face-slider">
-					<div class="slide">
-						<div class="wrap">
-							<div class="image"><img src="i/face-img.png"></div>
-							<div class="content">
-								<h2 class="title">ОПА 315 Ассам из&nbsp;Индии по&nbsp;скидке</h2>
-								<a href="#" class="b-btn border-btn">Подробнее</a>
-							</div>
-						</div>
-					</div>
-					<div class="slide">
-						<div class="wrap">
-							<div class="image"><img src="i/face-img.png"></div>
-							<div class="content">
-								<h2 class="title">ОПА 315 Ассам из&nbsp;Индии по&nbsp;скидке</h2>
-								<a href="#" class="b-btn border-btn">Подробнее</a>
-							</div>
-						</div>
-					</div>
+			<div class="face-slider">
+				<div class="slide">
+					<a href="#">
+						<img src="i/face-img.jpg">
+						<img src="i/face-img.jpg" class="mobile">
+					</a>
+				</div>
+				<div class="slide">
+					<a href="#">
+						<img src="i/face-img.jpg">
+						<img src="i/face-img.jpg" class="mobile">
+					</a>
 				</div>
 			</div>
 		</div>
@@ -200,7 +192,7 @@
 									<div class="text">мешков/коробок</div>
 								</div>
 							</div>
-							<div class="example-btn"><a href="#" class="btn">Заказть образец</a></div>
+							<div class="example-btn"><a href="#popup-sample" class="btn fancybox">Заказать образец</a></div>
 						</div>
 					</div>
 					<div class="slide">
@@ -247,7 +239,7 @@
 									<div class="text">мешков/коробок</div>
 								</div>
 							</div>
-							<div class="example-btn"><a href="#" class="btn">Заказть образец</a></div>
+							<div class="example-btn"><a href="#popup-sample" class="btn fancybox">Заказать образец</a></div>
 						</div>
 					</div>
 					<div class="slide">
@@ -294,7 +286,7 @@
 									<div class="text">мешков/коробок</div>
 								</div>
 							</div>
-							<div class="example-btn"><a href="#" class="btn">Заказть образец</a></div>
+							<div class="example-btn"><a href="#popup-sample" class="btn fancybox">Заказать образец</a></div>
 						</div>
 					</div>
 					<div class="slide">
@@ -341,7 +333,7 @@
 									<div class="text">мешков/коробок</div>
 								</div>
 							</div>
-							<div class="example-btn"><a href="#" class="btn">Заказть образец</a></div>
+							<div class="example-btn"><a href="#popup-sample" class="btn fancybox">Заказать образец</a></div>
 						</div>
 					</div>
 					<div class="slide">
@@ -388,7 +380,7 @@
 									<div class="text">мешков/коробок</div>
 								</div>
 							</div>
-							<div class="example-btn"><a href="#" class="btn">Заказть образец</a></div>
+							<div class="example-btn"><a href="#popup-sample" class="btn fancybox">Заказать образец</a></div>
 						</div>
 					</div>
 				</div>
@@ -466,7 +458,7 @@
 			<div class="container">
 				<div class="b-partner-line">
 					<div class="text">Нажмёте «Узнать условия» — не упустите эксклюзивное предложение. Хотите?</div>
-					<a href="/" class="b-btn">Узнать условия</a>
+					<a href="#popup-partnership" class="b-btn fancybox">Узнать условия</a>
 				</div>
 			</div>
 		</div>
@@ -511,7 +503,7 @@
 						</div>
 						<div class="bot">
 							<div class="text">Перезвоним и&nbsp;ответим<br> на&nbsp;все вопросы</div>
-							<a href="#" class="b-btn grey-btn">Перейти в каталог</a>
+							<a href="#popup-callback" class="b-btn grey-btn fancybox">Перейти в каталог</a>
 						</div>
 					</li>
 				</ul>
@@ -564,6 +556,60 @@
 		</div>
 
 		<div style="display:none;">
+			<div class="popup" id="popup-sample">
+				<div class="title">Закажите образец бесплатно</div>
+				<div class="b-form">
+					<div class="b-form">
+						<form>
+							<div class="b-input">
+								<input type="text" placeholder="Ваше имя">
+							</div>
+							<div class="b-input">
+								<input type="tel" placeholder="Ваш телефон">
+							</div>
+							<button type="submit" class="b-btn">Заказать образец</button>
+							<div class="policy-text"><div class="radio-btn active"></div>Я принимаю условия <a href="#popup-policy" class="fancybox">политики обработки персональных данных</a></div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="popup" id="popup-partnership">
+				<div class="title">Получить эксклюзивные условия</div>
+				<div class="b-form">
+					<div class="b-form">
+						<form>
+							<div class="b-input">
+								<input type="text" placeholder="Ваше имя">
+							</div>
+							<div class="b-input">
+								<input type="tel" placeholder="Ваш телефон">
+							</div>
+							<button type="submit" class="b-btn">Узнать условия</button>
+							<div class="policy-text"><div class="radio-btn active"></div>Я принимаю условия <a href="#popup-policy" class="fancybox">политики обработки персональных данных</a></div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="popup" id="popup-callback">
+				<div class="title">Закажите консультацию</div>
+				<div class="b-form">
+					<div class="b-form">
+						<form>
+							<div class="b-input">
+								<input type="text" placeholder="Ваше имя">
+							</div>
+							<div class="b-input">
+								<input type="tel" placeholder="Ваш телефон">
+							</div>
+							<button type="submit" class="b-btn">Отправить заявку</button>
+							<div class="policy-text"><div class="radio-btn active"></div>Я принимаю условия <a href="#popup-policy" class="fancybox">политики обработки персональных данных</a></div>
+						</form>
+					</div>
+				</div>
+			</div>
+
 			<div class="popup popup-policy" id="popup-policy">
 				<div class="title">Соглашение на обработку персональных данных</div>
 				<div class="b-text">
