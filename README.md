@@ -9,3 +9,4 @@
 <a href="https://evox1994.github.io/greatwind/cart">Корзина</a><br>
 <a href="https://evox1994.github.io/greatwind/error">Ошибка 404</a><br>
 <a href="https://evox1994.github.io/greatwind/thanks">Страница благодарности</a>
+<a href="https://evox1994.github.io/greatwind/policy">Политика конфиденциальности</a>
