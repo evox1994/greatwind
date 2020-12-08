@@ -264,6 +264,7 @@
 	display: block;
 	width: calc(100% - 100px);
 	border: 1px solid #f2f0e8;
+	border-right: 0;
 	font-size: 14px;
 	color: #222222;
 	border-radius: 5px 0 0 5px;
@@ -279,6 +280,9 @@
 	border: 0;
 	border-radius: 0 5px 5px 0;
 	background-color: #f2f0e8;
+}
+.header-search button:hover {
+	background-color: #e1e0d7;
 }
 .header-nav {
 	padding: 15px 0;
