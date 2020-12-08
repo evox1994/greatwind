@@ -349,6 +349,10 @@ textarea:-moz-placeholder {
 .policy-text .radio-btn.error {
     border-color: #ff0000;
 }
+.policy-text .radio-btn.active {
+    background-color: #ef4f2a;
+    border-color: #ef4f2a;
+}
 .policy-text .radio-btn:hover {
     cursor: pointer;
 }
@@ -360,7 +364,7 @@ textarea:-moz-placeholder {
     position: absolute;
     left: 2px;
     top: 13px;
-    background-color: #61bac6;
+    background-color: #ffffff;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -374,7 +378,7 @@ textarea:-moz-placeholder {
     position: absolute;
     left: 7px;
     top: 11px;
-    background-color: #61bac6;
+    background-color: #ffffff;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
