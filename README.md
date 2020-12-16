@@ -10,3 +10,5 @@
 <a href="https://evox1994.github.io/greatwind/error">Ошибка 404</a><br>
 <a href="https://evox1994.github.io/greatwind/thanks">Страница благодарности</a>
 <a href="https://evox1994.github.io/greatwind/policy">Политика конфиденциальности</a>
+<a href="https://evox1994.github.io/greatwind/search-1">Результаты поиска</a>
+<a href="https://evox1994.github.io/greatwind/search-2">Ничего не найдено</a>
